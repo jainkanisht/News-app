@@ -1,0 +1,123 @@
+/* General Navbar Styling */
+.navbar {
+  background-color: #1e1e2f;
+  color: white;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Container to align items */
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* Brand / Logo */
+.navbar-logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #ffc107;
+  cursor: pointer;
+}
+
+/* Navigation Links */
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+/* Each nav item */
+.navbar-links li {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover Effect */
+.navbar-links li:hover {
+  background-color: #ffc107;
+  color: #1e1e2f;
+}
+/* Base Navbar Styles */
+.navbar {
+  background-color: #1e1e2f;
+  color: white;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.navbar-logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #ffc107;
+  cursor: pointer;
+}
+
+/* Hamburger icon */
+.hamburger {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+/* Links list */
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.navbar-links li {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.navbar-links li:hover {
+  background-color: #ffc107;
+  color: #1e1e2f;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .navbar-links {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    margin-top: 1rem;
+  }
+
+  .navbar-links.open {
+    display: flex;
+  }
+
+  .navbar-links li {
+    background-color: #2a2a3f;
+    margin-bottom: 0.5rem;
+    text-align: center;
+  }
+}
