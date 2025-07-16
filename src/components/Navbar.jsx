@@ -17,15 +17,15 @@ const Navbar = ({ setCategory }) => {
     <nav className="navbar">
       <div className="navbar-container">
   <div className="navbar-left">
-    <div className="navbar-logo" onClick={() => setCategory("")}>
-      🗞️ NewsMag
+    <div className="navbar-logo" onClick={() => setCategory("general")}>
+      📰 NewsMag
     </div>
-    <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
+    <div className="hamburger" onClick={() => setMenuOpen(true)}>
       ☰
     </div>
   </div>
 
-  <ul className={`navbar-links ${menuOpen ? 'open' : ''}`}>
+  <ul className={`navbar-links ${menuOpen ? 'open' : 'close'}`}>
     {categories.map((cat) => (
       <li key={cat} onClick={() => {
         setCategory(cat.toLowerCase());
